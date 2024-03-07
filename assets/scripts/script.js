@@ -123,14 +123,18 @@ const zucchine2 = [
     }
 ]
 
+const zucchineOver15 = zucchine2.filter((zucchina) => 
+{ 
+  return zucchina.lunghezza >= 15;
+});
 
-const ages = [32, 33, 16, 40];
-const result = ages.filter(checkAdult);
+const zucchineUnder15 = zucchine2.filter((zucchina) => 
+{ 
+  return zucchina.lunghezza < 15;
+});
 
-function checkAdult(age) {
-  return age >= 18;
-}
-
+console.log(zucchineOver15);
+console.log(zucchineUnder15);
 
 
 /***************************/
