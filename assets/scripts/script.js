@@ -200,4 +200,23 @@ function mergeArrays(element1, element2, element3)
 mergeArrays(arraY1, arraY2, array3);
 
 
+/***************************************/
 
+/* Snack 5 */ 
+
+function betweenAB(arrayElement, numA, numB)
+{
+    if (numA != 0 && numA < numB && numB <= arrayElement.length) 
+    {
+        let resultArray = [];
+        for( let i = numA; i <= numB; i++)
+        {
+            resultArray.push(arrayElement[i]);
+        }
+
+        console.log(resultArray);
+        return(resultArray);
+    }
+}
+
+betweenAB(zucchine, 3, 7); /* usare rest?*/
